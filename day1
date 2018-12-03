@@ -2,7 +2,7 @@
 def freqSolver(start, change):
     return start + change
 Freq = 0
-inputFile = open("./day1/inputs")
+inputFile = open("./day1/input1")
 CurChange = 0
 FreqSet = {Freq}
 ChangeList = []
