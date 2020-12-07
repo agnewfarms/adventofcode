@@ -1,5 +1,5 @@
 #read from input
-inp = open("input.txt", "r")
+inp = open("Inputday1.txt", "r")
 nums = inp.readlines()
 inp.close()
 
