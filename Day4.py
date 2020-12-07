@@ -1,7 +1,7 @@
 from pathlib import Path
 import re
 
-#read input file
+#fundction to read input file
 def read_input_file(input_file_path):
     p = Path(input_file_path)
 
@@ -84,11 +84,11 @@ def get_passports_with_valid_entries(passports):
 
 
 if __name__ == "__main__":
-
+#run function to read passport file
     passports = read_input_file('Inputday4.txt')
-#235 passports with all required fields found
+#235 passports with all required fields found function
     valid_passports = get_passports_with_required_fields(passports)
     print(f"Star 1: {len(valid_passports)} passports with all required fields found.")
-#194 passports with all required fields and entries found
+#194 passports with all required fields and entries found function
     valid_entry_passports = get_passports_with_valid_entries(valid_passports)
     print(f"Star 2: {len(valid_entry_passports)} passports with all required fields and entries found.")
