@@ -85,9 +85,10 @@ def get_passports_with_valid_entries(passports):
 
 if __name__ == "__main__":
 
-    passports = read_input_file('input.txt')
-
+    passports = read_input_file('Inputday4.txt')
+#235 passports with all required fields found
     valid_passports = get_passports_with_required_fields(passports)
     print(f"Star 1: {len(valid_passports)} passports with all required fields found.")
+#194 passports with all required fields and entries found
     valid_entry_passports = get_passports_with_valid_entries(valid_passports)
     print(f"Star 2: {len(valid_entry_passports)} passports with all required fields and entries found.")
