@@ -1,7 +1,7 @@
 #create input file and then open the file and get day 7 input supplied by adventofcode
 
 import re
-r = open("inputday7.txt", "r")
+r = open("Inputday7.txt", "r")
 
 #using readlines
 rules = {}
