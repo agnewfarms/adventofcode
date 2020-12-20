@@ -22,15 +22,12 @@ def calculate_trees(lines_list, right, down):
                 trees += 1
     return trees
 
-# Open and read input for both parts.
-with open('input.txt','r') as f:
+with open('Inputday3.txt','r') as f:
     lines = f.read().splitlines()
 
-# Part one.
+
 trees = calculate_trees(lines, 3, 1)
 print(f"Part 1 answer - N° Trees: {trees}")
-
-# Part two.
 slopes = [[1, 1], [3, 1], [5, 1], [7, 1], [1, 2]]
 result = 1
 for slope in slopes:
